@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" version="4.0">
+  <display-name>ExamManagement</display-name>
+  <welcome-file-list>
+    <welcome-file>login.jsp</welcome-file>
+  </welcome-file-list>
+
+
+  <servlet>
+  	
+  
+    <description></description>
+    <display-name>LoginServlet</display-name>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>com.exam.servlets.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <description></description>
+    <display-name>LogoutServlet</display-name>
+    <servlet-name>LogoutServlet</servlet-name>
+    <servlet-class>com.exam.servlets.LogoutServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LogoutServlet</servlet-name>
+    <url-pattern>/LogoutServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+    <servlet>
+    <description></description>
+    <display-name>InsetDataServlet</display-name>
+    <servlet-name>InsetDataServlet</servlet-name>
+    <servlet-class>com.exam.servlets.InsetDataServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>InsetDataServlet</servlet-name>
+    <url-pattern>/InsetDataServlet</url-pattern>
+  </servlet-mapping>
+  
+     <servlet>
+    <description></description>
+    <display-name>UploadMarkServlet</display-name>
+    <servlet-name>UploadMarkServlet</servlet-name>
+    <servlet-class>com.exam.servlets.UploadMarkServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UploadMarkServlet</servlet-name>
+    <url-pattern>/UploadMarkServlet</url-pattern>
+  </servlet-mapping>
+	
+     <servlet>
+    <description></description>
+    <display-name>OtherExamDataServlet</display-name>
+    <servlet-name>OtherExamDataServlet</servlet-name>
+    <servlet-class>com.exam.servlets.OtherExamDataServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>OtherExamDataServlet</servlet-name>
+    <url-pattern>/OtherExamDataServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+</web-app>
